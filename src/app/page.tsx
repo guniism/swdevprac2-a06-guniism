@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
 import Banner from "@/components/Banner";
-import Card from "@/components/Card";
+import CardPanel from "@/components/CardPanel";
 
 export default function Home() {
   return (
@@ -8,12 +8,7 @@ export default function Home() {
       
       <Banner />
         <div className="max-w-6xl w-full mx-auto px-4">
-          <div style={{margin:"20px", display:"flex", flexDirection:"row", flexWrap:"wrap", justifyContent:"space-around", alignContent:"space-around", gap: "20px"}}>
-            <Card venueName="The Bloom Pavilion" imgSrc="/img/bloom.jpg" />
-            <Card venueName="Spark Space" imgSrc="/img/sparkspace.jpg" />
-            <Card venueName="The Grand Table" imgSrc="/img/grandtable.jpg" />
-            {/* <Card venueName="The Grand Table" imgSrc="/img/grandtable.jpg" /> */}
-          </div>
+          <CardPanel />
         </div>
 
     </main>
